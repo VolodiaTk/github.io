@@ -1,0 +1,27 @@
+{
+  "name": "PWA app",
+  "short_name": "PWA",
+  "description": "For ItStep",
+  "start_url": "/home.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#095FA8",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/images/icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+	{
+      "src": "/images/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+	{
+      "src": "/images/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

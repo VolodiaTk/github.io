@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курсач</title>
+    <link rel="stylesheet" href="styles/styles_expense_accounting.css">
+	<link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+    <header>
+        <div class="left-buttons">
+            <a href="index.html"><button>Главная</button></a>
+            <a href="expense_accounting.html"><button>Учет расходов</button></a>
+            <a href="rate.html"><button>Курс</button></a>
+            <a href="news.html"><button>Новости</button></a>
+        </div>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Логотип">
+        </div>
+    </header>
+
+    <div class="container">
+            <div class="limit-total-container">
+                <h1>Лимит расходов</h1>
+                <form id="expenseForm3">
+                    <input type="number" id="expenseLimit" name="expenseLimit" required>
+                    <button type="button" id="updateLimitButton">Обновить лимит</button>
+                    <p id="totalExpense">Остаток: ₴0.00</p>
+                </form>
+            </div>
+            <div class="form-container">
+                <h1>Учет расходов</h1>
+                <form id="expenseForm1">
+                    <label for="amount">Сумма:</label>
+                    <input type="number" id="amount" name="amount" required>
+                    <label for="category">Категория:</label>
+                    <select id="category" name="category" required>
+                        <option value="" disabled selected>--Выберите категорию--</option>
+                        <option value="Развлечения">Развлечения</option>
+                        <option value="Еда">Еда</option>
+                        <option value="Ювелирные изделия">Ювелирные изделия</option>
+                    </select>
+                    <label for="date">Дата:</label>
+                    <input type="date" id="date" name="date" required>
+                    <button type="button" onclick="addExpense()">Добавить расход</button>
+                </form>
+            </div>
+            <div class="list-container">
+                <h1>Список расходов</h1>
+                <form id="expenseForm2">
+                    <ul id="expenseList"></ul>
+                </form>
+            </div>
+    </div>
+	<footer>
+        &copy; 1999-2024 Компьютерная Академия IT Step
+    </footer>
+    <script src="script/adding_expenses.js"></script>
+	<script src="script/service-worker.js"></script>
+</body>
+
+</html>

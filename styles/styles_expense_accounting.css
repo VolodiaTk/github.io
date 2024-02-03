@@ -1,0 +1,197 @@
+body {
+	margin-top: 60px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #095FA8;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    z-index: 1000;
+}
+
+footer {
+    background-color: #095FA8;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+		
+.logo-container img {
+    width: 50px;
+    height: 50px;
+}
+
+.container {
+    border-radius: 8px;
+    padding: 0px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1700px;
+    display: flex;
+    justify-content: space-around; /* Убираем этот стиль */
+    align-items: center;
+    overflow-x: auto;
+    margin: 0 auto; /* Добавляем margin: 0 auto для центрирования блока по горизонтали */
+	height: 100vh;
+}
+
+.form-container,
+.list-container,
+.limit-total-container {
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.list-container {
+    flex: 1;
+}
+
+#expenseForm1,
+#expenseForm2,
+#expenseForm3 {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    width: 100%;
+	
+}
+
+#amount,
+#category,
+#date,
+#expenseLimit {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
+#expenseForm2 {
+    height: 300px;
+    overflow: auto;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    position: relative;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-bottom: 8px;
+}
+
+.delete-expense {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #095FA8;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #2675A6;
+}
+
+#totalExpense {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.limit-total-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media only screen and (max-width: 720px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        background-color: #095FA8;
+        padding: 90px;
+        display: flex;
+        justify-content: space-between;
+        align-items: left;
+        z-index: 1000;
+    }
+
+    button {
+        background-color: #095FA8;
+        color: #fff;
+        padding: 2px;
+        border: none;
+        border-radius: 1px;
+        cursor: pointer;
+        font-size: 30px;
+    }
+
+    .container {
+    border-radius: 8px;
+    padding: 100px; /* Отступ внутри .container */
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1700px;
+    display: flex;
+    flex-direction: column; /* Используем столбцовый режим */
+    align-items: center; /* Центрирование по вертикали */
+    overflow-x: auto;
+    margin: 100px auto 0; /* 20px сверху, автоматические боковые отступы, 0 снизу */
+    height: 100vh;
+}
+
+
+}
+

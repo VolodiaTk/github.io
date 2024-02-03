@@ -1,0 +1,161 @@
+body {
+	margin-top: 60px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #095FA8;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    z-index: 1000;
+}
+
+footer {
+    background-color: #095FA8;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+		
+.logo-container img {
+    width: 50px;
+    height: 50px;
+}
+
+button {
+    background-color: #095FA8;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #2675A6;
+}
+
+.wall-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.wall-text {
+    max-width: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.wall-image {
+    max-width: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.wall-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.highlighted-words .highlight {
+    color: #095FA8;
+    font-weight: bold;
+}
+
+.highlighted-words {
+    background-color: #f4f4f4;
+    padding: 40px 0;
+    height: 75vh;
+    overflow: auto;
+}
+
+h2 {
+    color: #333;
+}
+
+p {
+    color: #666;
+    line-height: 1.6;
+}
+
+@media only screen and (max-width: 720px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        background-color: #095FA8;
+        padding: 90px;
+        display: flex;
+        justify-content: space-between;
+        align-items: left;
+        z-index: 1000;
+    }
+
+    button {
+        background-color: #095FA8;
+        color: #fff;
+        padding: 2px;
+        border: none;
+        border-radius: 1px;
+        cursor: pointer;
+        font-size: 30px;
+    }
+
+    .wall-container {
+        display: flex;
+        flex-direction: column; /* Изменение направления flex контейнера на колонку */
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f4f4f4;
+    }
+
+    .wall-text {
+		font-size: 30px;
+        max-width: 600px;
+        padding: 20px;
+        box-sizing: border-box;
+        text-align: center;
+        order: 2; /* Изменение порядка отображения на второй (ниже) */
+    }
+
+    .wall-image {
+        max-width: 400px;
+        padding: 90px;
+        box-sizing: border-box;
+        text-align: bottom;
+        order: 1; /* Изменение порядка отображения на первый (выше) */
+    }
+	
+	.container {
+		font-size: 30px;
+		max-width: 600px;
+		margin: 0 auto;
+	}
+}

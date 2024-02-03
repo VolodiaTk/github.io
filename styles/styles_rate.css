@@ -1,0 +1,153 @@
+body {
+	margin-top: 60px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #095FA8;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    z-index: 1000;
+}
+
+footer {
+    background-color: #095FA8;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+		
+.logo-container img {
+    width: 50px;
+    height: 50px;
+}
+
+button {
+    background-color: #095FA8;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #2675A6;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+	weight: 1700vh;
+    overflow-x: auto;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+#currency-wall {
+    max-width: 1000px; /* Уменьшил ширину стены для лучшего визуального разделения */
+    text-align: center;
+}
+
+#currency-list {
+    width: 30%; /* Выберите желаемую ширину для списка валют */
+}
+
+#currency-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.currency-card {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: calc(16.666% - 20px); /* 16.666% для 6 блоков в строке */
+    box-sizing: border-box;
+}
+
+.currency-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.exchange-rate {
+    font-size: 16px;
+    color: #333;
+}
+
+.higher {
+    color: green;
+}
+
+.lower {
+    color: red;
+}
+
+@media only screen and (max-width: 720px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        background-color: #095FA8;
+        padding: 90px;
+        display: flex;
+        justify-content: space-between;
+        align-items: left;
+        z-index: 1000;
+    }
+
+    button {
+        background-color: #095FA8;
+        color: #fff;
+        padding: 2px;
+        border: none;
+        border-radius: 1px;
+        cursor: pointer;
+        font-size: 30px;
+    }
+
+	.container {
+    display: flex;
+    justify-content: space-around; /* Убираем этот стиль */
+    align-items: center;
+    height: 145vh;
+	weight: 1700vh;
+    overflow-x: auto;
+	margin: 300px auto 0; /* 20px сверху, автоматические боковые отступы, 0 снизу */
+	}
+
+	#currency-list {
+    width: 0%; /* Выберите желаемую ширину для списка валют */
+	}
+
+	#currency-wall {
+    max-width: 600px; /* Уменьшил ширину стены для лучшего визуального разделения */
+    text-align: center;
+	}
+}
